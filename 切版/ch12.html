@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(90deg, #3b5894, #08c7a5);
+        }
+
+        .table {
+            width: 800px;
+            margin: auto;
+
+        }
+
+        .table table {
+            width: 100%;
+            border: 3px double #666;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #ffa;
+        }
+
+        .table thead {
+            background: #333;
+            color: #fff;
+        }
+        .table tbody tr:hover{
+            background-color: #fee;
+        }
+        .table thead th:first-child {
+            border-radius: 7px 0 0 0;
+        }
+
+        .table thead th:last-child {
+            border-radius: 0 7px 0 0;
+        }
+
+        .table tfoot td:first-child {
+            border-radius: 0 0 0 7px;
+        }
+
+        .table tfoot td:last-child {
+            border-radius: 0 0 7px 0;
+        }
+
+        .table tbody a {
+            color: #666;
+        }
+
+        .table th {
+            border: 1px solid #aaaaaa;
+            padding: 6px 10px;
+        }
+
+        .table td {
+            border: 1px solid #aaaaaa;
+            padding: 6px 10px;
+        }
+
+        .table caption {
+            caption-side: bottom;
+            text-align: right;
+            padding: 10xp 0;
+            color: #ccc;
+        }
+
+        .table caption a {
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <table>
+            <caption>
+                css coke 範例一欄表：資料來源<a href="#">css coke youtube</a>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">基礎版面</th>
+                    <th scope="col">破格式版面</th>
+                    <th scope="col">滿版</th>
+                    <th scope="col">選單</th>
+                    <th scope="col">表單</th>
+                    <th scope="col">表格</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>
+                    <a href="https://youtu.be/rwTMBmnIHcY" target="_blank">圖文滿版</a>
+                </td>
+                <td>
+                    <a href="https://youtu.be/aN7zFs_AT8s" target="_blank">交錯漂浮版</a>
+                </td>
+                <td>
+                    <a href="https://youtu.be/rwTMBmnIHcY" target="_blank">圖文滿版</a>
+                </td>
+                <td>
+                    <a href="https://youtu.be/7BydlKueTgY" target="_blank">導覽列</a>
+                </td>
+                <td>敬請期待</td>
+                <td>
+                    <a href="https://youtu.be/zRREfvlLFIU" target="_blank">表格怎麼切</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://youtu.be/IocyLERRdko" target="_blank">互動圖文卡片</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/l-sQNXNrw3s" target="_blank">破格式設計</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/-mmzaE6eLzY" target="_blank">超通用橫式版面</a>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/9xT8kziyYko" target="_blank">變化你的導覽列</a>
+                    </td>
+                    <td>敬請期待</td>
+                    <td>敬請期待</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://youtu.be/2Qs0EuqJIYA" target="_blank">人員介紹卡片</a>
+                    </td>
+                    <td>敬請期待</td>
+                    <td>敬請期待</td>
+                    <td>
+                        <a href="https://youtu.be/n0yPFtpVRLU" target="_blank">網站麵包屑</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://youtu.be/-mmzaE6eLzY" target="_blank">超通用橫式版面</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>敬請期待</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://youtu.be/Y02yl_QQNv0" target="_blank">網頁頁尾</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://youtu.be/Xhhzzc9YZW4" target="_blank">方塊酥版面</a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>備註</td>
+                    <td colspan="5">以上資料經 CSS coke 同意轉貼</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 100%;
+            display: flex;
+        }
+        .item
+        {
+            width:25%;
+            position: relative;
+
+        }
+        .item img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 24px;
+            color: salmon;
+        }
+        p{
+            font-size: 18px;
+            color: seashell;
+            font-size: 100;
+        }
+        .item .txt{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            right: 0;
+            padding: 20px;
+            background-color: rgba(000, 000, 000, .3);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+        }
+        .item h2:after{
+                content: '';
+                display: block;
+                width:0%;
+                height: 2px;
+                margin:10px 0;
+                background-color: #ff0;
+                transition: width .5s .5s;
+            }
+            .item:hover h2:after{
+                width: 100%;
+
+            }
+        .txt:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/200/500?random=10">
+            <div class="txt">
+                <h2>金魚都懂的切版</h2>
+                <p>金魚號稱只有七秒的記憶,但其實這是錯誤的,科普一下你就會知道金魚的記憶力不只有七秒,所以,你有幾秒的記憶
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/500?random=20">
+            <div class="txt">
+                <h2>我的記憶力只有三秒</h2>
+                  <p>
+                      號稱能切出稀飯版的人只有在全世界只有1%不到！
+                      這樣的話你相信嗎？如果你不相信的話,何不當隻金魚跟著AMO一起學切版呢？,
+                      切完之後你就成為了那稀少的人了,那麼我會..幫你申請瀕臨絕種動物保護（被打）.
+                  </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/500?random=30">
+            <div class="txt">
+            <h2>我的記憶力只有三秒</h2>
+            <p>
+                暴力班, amos開設的一門線上視訊課程,內容由淺入深,由平合至暴力,從原理到實作,
+                從實做到需求變更,從需求變更到實務理解, 從..講那麼多幹嘛? 報名下去你就知道了啦,
+            </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/500?random=40">
+            <div class="txt">
+            <h2>我的記憶力只有三秒</h2>
+            <p>金魚的切版敲碗敲了一年..總算破了, 切版的金魚就跑出來了, 你還想看什麼？
+                你要不要去拿個碗敲敲看？ 把碗敲破了的話, 你就會...給你媽媽罵
+            </p>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

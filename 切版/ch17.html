@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: rgb(116, 139, 136);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .login {
+            width: 600px;
+            height: 500px;
+            background-color: rgba(17, 17, 17, 0.5);
+            border-radius: 10px;
+            border: 10px solid #ffffff;
+            box-shadow: 0 0 60px #0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            width: 400px;
+            color: #fff;
+        }
+
+        .form h2 {
+            margin-bottom: 20px;
+            padding-bottom: 20px; ;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .form .group {
+            margin-bottom: 10px;
+        }
+
+        .form label {
+            line-height: 3;
+        }
+
+        .form input {
+            width: 100%;
+            border:1px solid #aaa;
+            line-height: 3;
+            border: 5px;
+        }
+
+        .form .btn-group {
+            font-size: 0;
+            margin-top: 50px;
+        }
+
+        .form .btn {
+            font-size: 20px;
+            border-radius: 5px;
+            border:none;
+            color: #fff;
+            width: 190px;
+            padding: 10px 0px;
+
+        }
+        .form .btn+.btn{
+            margin-left: 20px;
+        }
+        .form .group a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <form class="form">
+            <div class="group">
+                <h2>會員登入</h2>
+                <label for="user_id">帳號</label>
+                <input type="text" id="user_id">
+            </div>
+            <div class="group">
+
+                <label for="user_password">密碼</label>
+                <input type="password" name="" id="user_password">
+            </div>
+            <div class="group">
+                <label for="password1"><a href="#">忘記密碼</a></label>
+            </div>
+            <div class="btn-group">
+                <button class="btn">登入</button>
+                <button class="btn">取消</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
