@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>製作網頁隨機驗證碼</title>
+    <script type="text/javascript" src="getCode.js"></script>
+</head>
+
+<body>
+    <div class="input">
+        <input id="t1" type="text" name="u" placeholder="驗證碼" onblur="but()" />
+        <spanid="discode"></span>
+            <input type="button" value="換一換" class="c" style="height:20px;" onClick="createCode()">
+    </div>
+
+</body>
+
+</html>
+
+<script language="javascript">
+    var code; //在全局 定義驗證碼
+    function createCode() { //創建驗證碼函數
+        code = "";
+        var codeLength = 4;//驗證碼的長度
+        var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
+            'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+        //所有候選組成驗證碼的字符，當然也可以用中文的
+        for (var i = 0; i < codeLength; i++) {
+            var charIndex = Math.floor(Math.random() * 36);
+            code += selectChar[charIndex];
+        }
+        // 設置驗證碼的顯示樣式，並顯示
+        document.getElementById("discode").style.fontFamily = "Fixedsys"; //設置字體
+        document.getElementById("discode").style.letterSpacing = "5px"; //字體間距
+        document.getElementById("discode").style.color = "#0ab000"; //字體顏色
+        document.getElementById("discode").innerHTML = code; // 顯示
+    }
+
+    function but() {//驗證驗證碼輸入是否正確
+
+        var val1 = document.getElementById("t1").value;
+
+        var val2 = code;
+
+        if (val1 != val2) {
+
+            alert("驗證碼錯誤!");
+
+            document.getElementById('t1').value = "";
+
+
+
+        }
+
+    }
+
+</script>
