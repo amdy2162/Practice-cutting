@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str1 = "They are students",
+            str2 = "aeiou",
+            res = ''
+        //判斷一個字符在另一個字符中 使用indexof(),返回索引或-1
+        //尋找str1中的所有字符 然後判斷是否在str2中 如果有就捨棄 沒有就加入res
+
+        for (var k = 0; k < str1.length; k++) {
+
+            var c = str1[k];
+            if (str2.indexOf(c) < 0) {
+                res += c
+            }
+        }
+
+        console.log(res)
+
+    </script>
+
+</body>
+
+</html>
